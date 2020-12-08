@@ -81,8 +81,12 @@ def adding_matz
         :known_for => "Unix",
         :languages => ["C"]
       }
+      :yukihiro_matsumoto => {
+        :known_for => "Ruby",
+        :languages => ["LISP", "C"]
+      }
     }
-
+    programmer_hash
 end
 
 def changing_alan
@@ -104,7 +108,7 @@ def changing_alan
         :languages => ["C"]
       }
     }
-
+  programmer_hash[:alan_kay][:known_for]="GUI"
 end
 
 def adding_to_dennis
@@ -126,5 +130,5 @@ def adding_to_dennis
         :languages => ["C"]
       }
     }
-
+  programmer_hash[:dennis_ritchie][:languages].push("Assembly")
 end
